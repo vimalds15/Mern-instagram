@@ -1,38 +1,144 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+
+
+
+
+a{
+  color: black !important;
+}
+
+.brand-logo{
+  font-family: 'Grand Hotel', cursive;
+}
+
+.mycard{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  height: 100%;
+}
+
+.auth-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding:20px 40px 20px 40px;
   text-align: center;
+  height: 100%;
+  max-width: 400px;
+  min-height: 450px;
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.lgn-btn{
+  margin-top: 10px !important;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  box-shadow: 0 1px 0 0 rgb(209, 209, 209) !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid rgb(0, 0, 0) !important;
+  box-shadow: 0 1px 0 0 rgb(209, 209, 209) !important;
+}
+/* Profile Section */
+
+.profile-container{
+  margin:0 auto;
+  max-width: 650px;
+}
+
+.profile-head{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0px 20px 0px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.profile-img{
+  height: 120px;
+  width: 120px;
+  border-radius:50%;
+  object-fit: cover;
+}
+
+.profile-stats{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 108%;
+  /* padding-top: 5px; */
+  color: grey;
+}
+
+.profile-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top:10px;
+}
+
+.item{
+  width: 30%;
+  /* height:150px; */
+  object-fit: cover;
+  margin-bottom:10px;
+}
+
+
+
+/* Home Section */
+
+
+.home-card{
+  max-width: 500px;
+  height:max-content;
+  margin:26px auto;
+}
+
+/* Create Post Section */
+.create-post-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+
+.create-card{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 400px;
+  padding: 0px 30px 50px 30px;
+  min-height: 450px;
+  border-radius: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+/* Toast */
+
+#toast-container{
+  top: 30px !important;
+  right: 20px !important;
+  left: auto !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Home */
+
+.user-name{
+  padding:5px 0 0 10px;
+}
+
+.material-icons:hover{
+  cursor:pointer;
 }
